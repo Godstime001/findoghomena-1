@@ -103,23 +103,44 @@ body {
 
 /* INTRO_SECTION */
 
-header .intro-container {
-	background-image: url("./../img/banner1.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	height: 80vh;
+.intro-container {
+    width: 100vw;
+    overflow: hidden;
+    height: 80vh;
+    background-image: url("./img/banner1.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: #111 2px 2px 2px;
 }
 header .intro-content-container {
 	justify-content: center;
 	display: flex;
 	align-items: center;
-	background-color: rgb(9, 31, 66, 0.9);
+	background-color: rgb(9, 31, 66, 0.7);
 	height: 100%;
 	width: 100%;
 }
-
+.main{
+    width: 100vw;
+    overflow: hidden;
+    height: 80vh;
+    background-image: url("./img/web-dev-14.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: #111 2px 2px 2px;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
 .hexagon:before {
 	background-color: inherit;
 	content: "";
@@ -155,6 +176,13 @@ h3 {
 	font-weight: bolder;
 	color: rgb(17, 102, 98);
 	text-shadow: #111 2px 2px 2px;
+}
+@media (max-width: 765px) {
+.intro-content span {
+	font-weight: 900;
+	font-size: 30px;
+	text-shadow: #111 1px 1px 1px;
+}
 }
 .intro-content button {
 	font-weight: 100;
@@ -222,9 +250,7 @@ nav ul li a:hover {
 }
 
 /* ABOUT SECTION  */
-
 .about-header {
-	padding-top: 30px;
 	text-decoration: underline;
 	font-weight: bolder;
 	color: #091f42;
